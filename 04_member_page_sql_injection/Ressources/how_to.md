@@ -22,7 +22,7 @@ You can access to the content of the different tables especially to the users.
 
 
 ## How to avoid it?
-Use a good framework that prepare accodingly the sql requests.
-Be sure to escape correctly special caracters. Check for the data given versus the data type expected in the database. 
+Use a good framework that prepare accordingly the sql requests.
+Be sure to escape correctly special characters. Check for the data given versus the data type expected in the database. 
 
 
