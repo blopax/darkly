@@ -23,13 +23,17 @@ def get_links(root):
 
 
 if __name__ == '__main__':
-    readme_list = get_links('http://10.13.0.53/.hidden/')
-    answers = []
-    full_answers = []
-    for readme_href in readme_list:
-        ret = requests.get(readme_href)
-        if ret.text not in answers:
-            answers.append(ret.text)
-            full_answers.append({readme_href: ret.text})
-    print(full_answers)
-
+    try:
+        readme_list = get_links('http://10.13.0.196/.hidden/')
+        answers = []
+        full_answers = []
+        for readme_href in readme_list:
+            ret = requests.get(readme_href)
+            if ret.text not in answers:
+                answers.append(ret.text)
+                full_answers.append({readme_href: ret.text})
+        print(full_answers)
+    except requests.exceptions.ConnectionError as err:
+        print("There was an issue. Modify the line 27 of the file to be sure it is the correct url of the website.")
+    except:
+        print("An error occured.")

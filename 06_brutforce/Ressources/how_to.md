@@ -7,7 +7,7 @@ On page  http://10.13.0.53/index.php?page=signin
 Enter `admin` + `shadow`
 
 To get those values you can use the brutforce.py file in this folder.
-
+Modify the line 15 of the file so it corresponds to your website. 
 ```python3 python3 brutforce.py ```
 
 
