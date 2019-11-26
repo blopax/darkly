@@ -5,7 +5,7 @@ Sensitive information in source code and HTTP headers modification.
 On page http://10.13.0.196/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c 
 
 In the source code, it is written than changing the referer to `https://www.nsa.gov/` and the browser to `ft_bornToSec` you could access a specific page.
-In the network tab of the firefox inspector tool you can modify those and access to the page.
+In the network tab of the firefox inspector tool you can modify those and access to the page (go in the response tab).
 
 
 ## Why is it a problem?

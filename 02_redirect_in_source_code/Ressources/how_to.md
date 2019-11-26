@@ -13,6 +13,7 @@ by
 
 
 ## Why is it a problem?
+The redirect looks for the website passed in the data. This data can be changed.
 
 
 ## How to avoid it?
