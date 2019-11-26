@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import argparse
 
 
 def clean_links_list(root, root_links_list, links_list, final_list):
@@ -24,7 +25,13 @@ def get_links(root):
 
 if __name__ == '__main__':
     try:
-        readme_list = get_links('http://10.13.0.196/.hidden/')
+        parser = argparse.ArgumentParser()
+        parser.add_argument("root_url",
+                        help="Please provide the root_url of the site provided by the iso. In this format: 10.13.0.196",
+                        type=str)
+        args = parser.parse_args()
+        url = 'http://{}/.hidden/'.format(args.root_url)
+        readme_list = get_links(url)
         answers = []
         full_answers = []
         for readme_href in readme_list:
@@ -34,6 +41,7 @@ if __name__ == '__main__':
                 full_answers.append({readme_href: ret.text})
         print(full_answers)
     except requests.exceptions.ConnectionError as err:
-        print("There was an issue. Modify the line 27 of the file to be sure it is the correct url of the website.")
+        print("There was an issue with the url provided. Check if the iso is running and provide the root_url of the "
+              "site provided by the iso. In this format: 10.13.0.196")
     except:
         print("An error occured.")
