@@ -18,3 +18,4 @@ The recover password can be sent to someone else than the original intended emai
 
 ## How to avoid it?
 Don't trust user input before handling it with your server even if in a hidden field it can be modified.
+In this specific example the whole recover flow is very poor.

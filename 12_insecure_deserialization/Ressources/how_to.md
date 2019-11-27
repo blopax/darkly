@@ -1,5 +1,5 @@
 # The issue
-Login page allows brutforce which enables to login as a user that has a common password.
+Object injection can make the most of unsecure deserialization to execute a script.
 
 ## How to reproduce it on the website?
 On page  http://10.13.0.196/?page=media&src=nsa

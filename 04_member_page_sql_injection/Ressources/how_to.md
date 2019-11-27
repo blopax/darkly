@@ -1,5 +1,5 @@
 # The issue
-Forms are not protected against SQL injection enabling us to get access to precious information
+Forms are not protected against SQL injection enabling us to get access to precious information.
 
 ## How to reproduce it on the website?
 On page http://10.13.0.53/?page=member 
@@ -18,7 +18,7 @@ Surname : 5ff9d0165b4f92b14994e5c685cdce28
 ```
 
 ## Why is it a problem?
-You can access to the content of the different tables especially to the users.
+You can access to the content of the different tables especially to the users' information.
 
 
 ## How to avoid it?
