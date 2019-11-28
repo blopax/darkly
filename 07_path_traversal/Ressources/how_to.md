@@ -1,5 +1,5 @@
 # The issue
-This exploit uses the include() fucntions of php that enables to access to pages that are stored outside the web root folder.
+This exploit uses the include() functions of php that enables to access to pages that are stored outside the web root folder.
 
 ## How to reproduce it on the website?
 On page http://10.13.0.196/?page=../../../../../../../../../../../../../../etc/passwd 

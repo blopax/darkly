@@ -1,5 +1,5 @@
 # The issue
-Forms are not protected against SQL injection enabling us to get access to precious information
+Forms are not protected against SQL injection enabling us to get access to precious information.
 
 ## How to reproduce it on the website?
 On page http://10.13.0.53/?page=searchimg

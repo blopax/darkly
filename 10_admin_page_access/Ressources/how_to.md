@@ -1,5 +1,5 @@
 # The issue
-A lot of websites have an admin page giving access to the back-office. Beware of protecting these access.
+A lot of websites have an admin page giving access to the back-office. Beware of protecting this access.
 
 
 ## How to reproduce it on the website?
@@ -19,5 +19,5 @@ You give critical information to a hacker that can get access to your back-offic
 
 ## How to avoid it?
 Be sure not to let any sensitive information anywhere on the website even if the page is not directly accessible through clicks.
-The htpasswd should be out of reach of anyuser and well protected outside of the web root folder.
+The htpasswd should be out of reach of any user and well protected outside of the web root folder.
 In this case also get a better password to avoid brutforce attack.

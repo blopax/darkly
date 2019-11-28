@@ -4,7 +4,7 @@ User input in form can be modified.
 ## How to reproduce it on the website?
 On page http://10.13.0.53/index.php?page=survey#
 
-in the source code look for `` and change the value to `10000` befre sending the form.
+in the source code look for the dropdown and change the value to `10000` befre sending the form.
 
 
 ## Why is it a problem?
